@@ -1,0 +1,76 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files — never commit real secrets
+.env
+.env*.local
+
+# test seed data — contains credentials, never commit
+supabase/seed.sql
+
+# Google Play service account key — never commit
+google-play-key.json
+
+# typescript
+*.tsbuildinfo
+
+# generated native folders
+/ios
+/android
+
+# Supabase CLI binary (download separately, don't commit)
+supabase.exe
+supabase-cli
+
+# Supabase local dev temp files
+supabase/.temp/
+
+# Build output
+dist-test/
+dist/
+
+# Cursor IDE
+.cursor/
+
+# Local credentials, signing material and machine settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+*.jks
+google-play-key.json
+*service-account*.json
+.claude/settings.local.json

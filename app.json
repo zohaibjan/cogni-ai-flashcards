@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "Cogni AI",
+    "slug": "CogniStudy",
+    "scheme": "cogni",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F5F5FF"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.cogniflashcards",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Cogni AI uses your camera to capture notes and textbook pages for flashcard generation.",
+        "NSPhotoLibraryUsageDescription": "Cogni AI accesses your photos to select images for flashcard generation."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#F5F5FF"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.example.cogniflashcards",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Cogni AI uses your camera to capture notes and textbooks.",
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Cogni AI accesses your photos to select study materials."
+        }
+      ]
+    ]
+  }
+}
